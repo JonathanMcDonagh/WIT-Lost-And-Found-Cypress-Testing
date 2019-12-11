@@ -30,7 +30,7 @@ describe('Manage Items page', () => {
     it('increases the no. of likes by 1', () => {
       cy.get('tbody')
         .find('tr')
-        .should('have.length', 7) // Set to current number of items in the list
+        .should('have.length', 8) // Set to current number of items in the list
       // Click delete link of 3rd item in list
       cy.get('tbody')
         .find('tr')
@@ -41,6 +41,28 @@ describe('Manage Items page', () => {
         .click()
       cy.get('tbody')
         .find('tr')
+    })
+  })
+  describe('For a confirmed delete operation', () => {
+    it('reduces the no. of items by 1', () => {
+      cy.get('tbody')
+        .find('tr')
+        .should('have.length', 8) // Set to current number of items in the list
+      // Clicks delete link of 3rd item in list
+      cy.get('tbody')
+        .find('tr')
+        .eq(2)
+        .find('td')
+        .eq(9)
+        .find('a')
+        .click()
+      // Click confirmation button
+      cy.get('button')
+        .contains('Delete')
+        .click()
+      cy.get('tbody')
+        .find('tr')
+        .should('have.length', 7)
     })
   })
 })
