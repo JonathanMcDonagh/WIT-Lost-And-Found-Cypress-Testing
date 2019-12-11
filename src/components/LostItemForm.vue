@@ -2,7 +2,7 @@
   <form @submit.prevent="submit">
     <div class="form-group" :class="{ 'form-group--error': $v.studentid.$error }">
       <label class="form-control-label" name="studentid">Student Number</label>
-      <input class="form__input" type="number" v-model.trim="studentid"/>
+      <input data-test="studentid" class="form__input" type="number" v-model.trim="studentid"/>
     </div>
     <div class="error" v-if="!$v.name.required">Student Number is Required</div>
 
