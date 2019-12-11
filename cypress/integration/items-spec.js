@@ -43,6 +43,54 @@ describe('Manage Items page', () => {
         .find('tr')
     })
   })
+
+  describe('To edit an item operation', () => {
+    it('Changes item description', () => {
+      cy.get('tbody')
+        .find('tr')
+        .should('have.length', 4)
+      // Click delete link of 3rd item in list
+      cy.get('tbody')
+        .find('tr')
+        .eq(2)
+        .find('td')
+        .eq(8)
+        .find('a')
+        .click()
+      cy.url().should('include', '/edit')
+      cy.get('label')
+        .contains('Lost Item Description')
+        .next()
+        .type('Laptop Bag')
+      cy.get('[data-test=manageitemsbtn]').click()
+      cy.url().should('include', '/items')
+      cy.get('tbody')
+        .find('tr')
+        .should('have.length', 4)
+    })
+  })
+  describe('For a cancelled edit operation', () => {
+    it('leaves the list unchanged', () => {
+      cy.get('tbody')
+        .find('tr')
+        .should('have.length', 4)
+      // Click delete link of 3rd item in the list
+      cy.get('tbody')
+        .find('tr')
+        .eq(2)
+        .find('td')
+        .eq(8)
+        .find('a')
+        .click()
+      cy.url().should('include', '/edit')
+      cy.get('[data-test=manageitemsbtn]').click()
+      cy.url().should('include', '/items')
+      cy.get('tbody')
+        .find('tr')
+        .should('have.length', 4)
+    })
+  })
+
   describe('For a confirmed delete operation', () => {
     it('reduces the no. of items by 1', () => {
       cy.get('tbody')

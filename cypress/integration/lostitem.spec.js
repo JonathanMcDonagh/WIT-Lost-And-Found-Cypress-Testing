@@ -1,4 +1,4 @@
-const apiURL = 'https://api-witlostandfound-staging.herokuapp.com/items/'
+const apiURL = 'localhost:3000/items/'
 
 describe('Lost Item page', () => {
   beforeEach(() => {
