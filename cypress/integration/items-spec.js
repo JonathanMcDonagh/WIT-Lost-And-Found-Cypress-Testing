@@ -1,4 +1,4 @@
-const apiURL = 'https://api-witlostandfound-staging.herokuapp.com/items/'
+const apiURL = 'localhost:3000/items/'
 
 describe('Manage Items page', () => {
   beforeEach(() => {
@@ -30,7 +30,7 @@ describe('Manage Items page', () => {
     it('increases the no. of likes by 1', () => {
       cy.get('tbody')
         .find('tr')
-        .should('have.length', 8) // Set to current number of items in the list
+        .should('have.length', 4)
       // Click delete link of 3rd item in list
       cy.get('tbody')
         .find('tr')
@@ -47,7 +47,7 @@ describe('Manage Items page', () => {
     it('reduces the no. of items by 1', () => {
       cy.get('tbody')
         .find('tr')
-        .should('have.length', 8) // Set to current number of items in the list
+        .should('have.length', 4)
       // Clicks delete link of 3rd item in list
       cy.get('tbody')
         .find('tr')
@@ -62,7 +62,29 @@ describe('Manage Items page', () => {
         .click()
       cy.get('tbody')
         .find('tr')
-        .should('have.length', 7)
+        .should('have.length', 3)
+    })
+  })
+  describe('For a cancelled delete operation', () => {
+    it('leaves the list unchanged', () => {
+      cy.get('tbody')
+        .find('tr')
+        .should('have.length', 4)
+      // Click delete link of 3rd item in the list
+      cy.get('tbody')
+        .find('tr')
+        .eq(2)
+        .find('td')
+        .eq(9)
+        .find('a')
+        .click()
+      // Click cancel button
+      cy.get('button')
+        .contains('No Take Me Back')
+        .click()
+      cy.get('tbody')
+        .find('tr')
+        .should('have.length', 4)
     })
   })
 })
