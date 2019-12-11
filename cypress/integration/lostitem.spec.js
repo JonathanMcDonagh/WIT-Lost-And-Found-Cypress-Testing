@@ -10,8 +10,8 @@ describe('Lost Item page', () => {
         })
       })
     cy.fixture('items').then(items => {
-      let [d1, d2, d3, d4, d5] = items
-      let four = [d1, d2, d3, d4, d5]
+      let [d1, d2, d3, d4, ...rest] = items
+      let four = [d1, d2, d3, d4]
       four.forEach(item => {
         cy.request('POST', apiURL, item)
       })
@@ -53,14 +53,9 @@ describe('Lost Item page', () => {
       })
       after(() => {
         cy.wait(100)
-        // Click manage items
-        cy.get('.navbar-nav')
-          .eq(0)
-          .find('.nav-item')
-          .eq(1)
-          .click()
-        cy.get('tbody')
-          .find('tr')
+        // Click manage items button
+        cy.get('[data-test=manageitemsbtn]').click()
+        cy.url().should('include', '/items')
       })
     })
   })

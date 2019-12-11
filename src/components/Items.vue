@@ -4,7 +4,7 @@
     <div id="app1">
       <v-client-table :columns="columns" :data="items" :options="options">
         <a slot="like" slot-scope="props" class="fa fa-thumbs-o-up fa-2x" @click="like(props.row._id)"></a>
-        <a slot="edit" slot-scope="props" class="fa fa-pencil fa-2x" @click="editItem(props.row._id)"></a>
+        <a slot="edit" slot-scope="props" data-test="deletebtn" class="fa fa-pencil fa-2x" @click="editItem(props.row._id)"></a>
         <a slot="remove" slot-scope="props" class="fa  fa-eraser fa-2x" @click="deleteItem(props.row._id)"></a>
       </v-client-table>
     </div>

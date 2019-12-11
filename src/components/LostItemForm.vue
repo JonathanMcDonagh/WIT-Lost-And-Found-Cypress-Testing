@@ -46,7 +46,7 @@
       <button class="btn btn-primary btn1" type="submit" :disabled="submitStatus === 'PENDING'">Submit Item</button>
     </p>
     <p>
-      <a href="#/items" class="btn btn-primary btn1" role="button">Manage Items</a>
+      <a href="#/items" data-test=manageitemsbtn class="btn btn-primary btn1" role="button">Manage Items</a>
     </p>
     <p class="typo__p" v-if="submitStatus === 'OK'">Thanks for your help!</p>
     <p class="typo__p" v-if="submitStatus === 'ERROR'">Please Fill in the Form Correctly.</p>
