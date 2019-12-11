@@ -1,0 +1,7 @@
+[
+  { "studentid": 20074520, "name": "Jonathan", "WITBuilding": "IT Building", "WITRoom": "IT118", "lostitem": "Type C Charger", "likes": 5 },
+  { "studentid": 20074530, "name": "Lauren", "WITBuilding": "IT Building", "WITRoom": "ITG01", "lostitem": "Bag pack", "likes": 3 },
+  { "studentid": 20074540, "name": "Sean", "WITBuilding": "FTG Building", "WITRoom": "FTG26", "lostitem": "Pencil Case", "likes": 0 },
+  { "studentid": 20074550, "name": "Tara", "WITBuilding": "Business Building", "WITRoom": "F02", "lostitem": "Laptop Charger", "likes": 2 },
+  { "studentid": 20074560, "name": "Nick", "WITBuilding": "TL Building", "WITRoom": "TL156", "lostitem": "Jacket", "likes": 4 }
+]

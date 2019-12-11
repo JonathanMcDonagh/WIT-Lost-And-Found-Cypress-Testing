@@ -1,0 +1,44 @@
+<template>
+  <div class="hero">
+    <h1 class="vue-title">WIT Lost And Found</h1>
+
+    <h3>Welcome</h3>
+    <table align="center">
+      <tr>
+        <td><img src="../assets/witcrest.png" alt="WIT Logo" /></td>
+      </tr>
+      <tr>
+        <td>
+          <p class="lead">
+          <p>Found a lost item on the WIT Property?</p>
+          <p>Just click <a href ="/lostitem">here</a> to go to</p>
+          <p>the Lost Items page and report the lost item</p>
+        </td>
+      </tr>
+    </table>
+
+  </div>
+</template>
+
+<style>
+  .hero {
+    height: 100vh;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .hero .lead {
+    font-weight: 200;
+    font-size: 2.5rem;
+  }
+  #app1 {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .vue-title {
+    font-size: 40pt;
+    margin-bottom: 10px;
+  }
+
+</style>
