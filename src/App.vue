@@ -8,7 +8,7 @@
         <b-navbar-nav>
           <b-nav-item to="/"><i class="fa fa-graduation-cap" style="padding: 5px"> Home</i></b-nav-item>
           <b-nav-item to="/items"><i class="fa fa-list-ul" style="padding: 5px"> Manage Lost Items</i></b-nav-item>
-          <b-nav-item to="/lostitem"><i class="fa fa-plus-square-o" style="padding: 5px"> Report Lost Item</i></b-nav-item>
+          <b-nav-item data-test="lostitembtn" to="/lostitem"><i class="fa fa-plus-square-o" style="padding: 5px"> Report Lost Item</i></b-nav-item>
           <b-nav-item to="/map"><i class="fa fa-map-marker" style="padding: 5px"> Map</i></b-nav-item>
           <b-nav-item to="/about"><i class="fa fa-user-secret" style="padding: 5px"> About Us</i></b-nav-item>
         </b-navbar-nav>
