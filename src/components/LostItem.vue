@@ -26,7 +26,7 @@ export default {
   data () {
     return {
       item: {studentid: 0, name: '', WITBuilding: '', WITRoom: '', lostitem: ''},
-      messagetitle: ' Submit Item '
+      messagetitle: ' Report Lost Item '
     }
   },
   components: {

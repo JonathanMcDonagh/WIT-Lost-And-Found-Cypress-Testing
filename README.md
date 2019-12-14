@@ -1,30 +1,61 @@
-# wit-lost-and-found-vue
+# Assignment 2 - Agile Software Practice.
 
-> A Vue.js project
+Name: Jonathan McDonagh
 
-## Build Setup
+Student Number: 20074520
 
-``` bash
-# install dependencies
-npm install
+## Client UI.
+WIT Lost And Found
 
-# serve with hot reload at localhost:8080
-npm run dev
 
-# build for production with minification
-npm run build
+[homepage]: images/HomePage.png
 
-# build for production and view the bundle analyzer report
-npm run build --report
+![][homepage]
 
-# run unit tests
-npm run unit
+>>Home Page
 
-# run e2e tests
-npm run e2e
+[itemspage]: images/ItemsPage.png
 
-# run all tests
-npm test
-```
+![][itemspage]
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+>>List of Lost Items
+
+[formpage]: images/FormPage.png
+
+![][formpage]
+
+>>Form for users to add items they found
+
+[mappage]: images/MapPage.png
+
+![][mappage]
+
+>>Interactive map for users to view WIT (Google API)
+
+[aboutpage]: images/AboutPage.png
+
+![][aboutpage]
+
+>>About Page
+
+[loginpage]: images/LoginPage.png
+
+![][loginpage]
+
+>>Login Page connected with firebase
+
+[signuppage]: images/SignUpPage.png
+
+![][signuppage]
+
+>>Sign-up Page connected with firebase
+
+## E2E/Cypress testing.
+
+## Web API CI.
+https://jonathanmcdonagh.gitlab.io/wit-lost-and-found-cicd/coverage/lcov-report/
+
+https://gitlab.com/jonathanmcdonagh/wit-lost-and-found-cicd
+
+## GitLab CI.
+

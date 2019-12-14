@@ -3,5 +3,10 @@
   { "studentid": 20074530, "name": "Lauren", "WITBuilding": "IT Building", "WITRoom": "ITG01", "lostitem": "Bag pack", "likes": 3 },
   { "studentid": 20074540, "name": "Sean", "WITBuilding": "FTG Building", "WITRoom": "FTG26", "lostitem": "Pencil Case", "likes": 0 },
   { "studentid": 20074550, "name": "Tara", "WITBuilding": "Business Building", "WITRoom": "F02", "lostitem": "Laptop Charger", "likes": 2 },
-  { "studentid": 20074560, "name": "Nick", "WITBuilding": "TL Building", "WITRoom": "TL156", "lostitem": "Jacket", "likes": 4 }
+  { "studentid": 20074560, "name": "Nick", "WITBuilding": "TL Building", "WITRoom": "TL156", "lostitem": "Jacket", "likes": 4 },
+  { "studentid": 20074570, "name": "Jordan", "WITBuilding": "Business Building", "WITRoom": "F026", "lostitem": "Headphones", "likes": 8 },
+  { "studentid": 20074580, "name": "Emily", "WITBuilding": "IT Building", "WITRoom": "ITG03", "lostitem": "Laptop case", "likes": 1 },
+  { "studentid": 20074590, "name": "Michelle", "WITBuilding": "FTG Building", "WITRoom": "FTG28", "lostitem": "Computer Mouse", "likes": 4 },
+  { "studentid": 20074600, "name": "Joe", "WITBuilding": "IT Building", "WITRoom": "IT221", "lostitem": "Notebook", "likes": 6 },
+  { "studentid": 20074610, "name": "Michael", "WITBuilding": "Business Building", "WITRoom": "D04", "lostitem": "Earphones", "likes": 5 }
 ]
