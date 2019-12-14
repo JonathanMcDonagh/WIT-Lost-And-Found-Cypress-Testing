@@ -68,6 +68,15 @@ export default {
 </script>
 
 <style>
+  body {
+    background-image: url("assets/startwitimage.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: 0;
+    right: 0;
+    margin:0;
+    padding:0;
+  }
   #app {
     font-family:helvetica neue,Helvetica,Roboto,Arial,sans-serif;
     font-size:1rem;
@@ -81,8 +90,28 @@ export default {
     cursor: pointer;
   }
 
+  .row.justify-content-center {
+    background-repeat: no-repeat;
+    color: black;
+    padding: 20px;
+    margin-bottom: 60px;
+  }
+
+  a.fa.fa-thumbs-o-up.fa-2x {
+    color: blue;
+  }
+
+  a.fa.fa-pencil.fa-2x {
+    color: #DC8C24;
+  }
+
+  a.fa.fa-eraser.fa-2x {
+    color: red;
+  }
+
   .bg-dark {
-    background-color: grey !important;
+    background-color: #0288BD !important;
+    border-bottom: 1px solid white;
   }
 
   i.fa.fa {
@@ -90,20 +119,8 @@ export default {
   }
 
   li.nav-item:hover {
-    background-color: #0D3C51;
-    color: #ffffff;
-  }
-
-  a.navbar-brand.router-link-exact-active.router-link-active {
-    color: #E82025;
-  }
-
-  .userName {
-    color: #E82025;
-  }
-
-  .nav-link.router-link-exact-active.router-link-active {
-    text-decoration: underline;
+    color: #2D4FA1;
+    border: 1px solid white;
   }
 
   .navlogo {
@@ -112,12 +129,46 @@ export default {
     width: 50px;
   }
 
+  .form-control-label, .form__label, .form-label {
+    background-color: #0288bdb0;
+    color: white;
+    margin-top: 20px;
+  }
+
   #__BVID__47__BV_button_ > span {
     font-weight: bold;
     color: white;
   }
 
   ul.dropdown-menu.dropdown-menu-right.show {
-    background-color: grey;
+    background-color: #0288BD;
   }
+
+  #homePageBG {
+    background-color: white;
+    padding: 20px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30%;
+  }
+
+  #aboutPageBG {
+    background-color: white ;
+    width: 50%;
+    padding: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 30%;
+  }
+
+  .VueTables.VueTables--client {
+    background-color: #f5f5f5;
+  }
+
+  .backText {
+    color: white;
+    font-weight: bold;
+  }
+
 </style>

@@ -1,5 +1,6 @@
 <template>
   <div class="hero">
+    <div id="homePageBG">
     <h1 class="vue-title">WIT Lost And Found</h1>
 
     <h3>Welcome</h3>
@@ -12,11 +13,10 @@
           <p class="lead">
           <p>Found a lost item on the WIT Property?</p>
           <p>Just click <a href ="/lostitem">here</a> to go to</p>
-          <p>the Lost Items page and report the lost item</p>
         </td>
       </tr>
     </table>
-
+    </div>
   </div>
 </template>
 

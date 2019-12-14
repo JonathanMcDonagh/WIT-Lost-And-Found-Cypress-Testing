@@ -1,9 +1,9 @@
 <template>
   <div class="login">
     <h2 class="vue-title">Login</h2>
-    <input type="text" v-model="email" placeholder="Email"><br>
-    <input type="password" v-model="password" placeholder="Password"><br>
-    <button @click="login" class="loginBtn">Log in</button><br>
+    <input type="text" data-test="email"  v-model="email" placeholder="Email"><br>
+    <input type="password" data-test="password" v-model="password" placeholder="Password"><br>
+    <button @click="login" data-test="loginbtn" type="submit" class="loginBtn">Log in</button><br>
     <span class="backText">Don't have an account? Click <router-link data-test=signupbtn to="/signup">Here</router-link> to sign up.</span>
   </div>
 </template>

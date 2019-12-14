@@ -37,7 +37,7 @@ describe('Lost Item page', () => {
           .contains('Name')
           .next()
           .type('onathan')
-        cy.get('#WITBuilding').select('IT Building')
+        cy.get('#WITBuilding').select('IT')
         cy.get('label')
           .contains('WIT Room Number')
           .next()

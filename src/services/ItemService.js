@@ -20,7 +20,7 @@ export default {
   putItem (id, item) {
     console.log('REQUESTING ' + item._id + ' ' +
       JSON.stringify(item, null, 5))
-    return Api().put(`/items/${id}/update`, item,
+    return Api().put(`/item/${id}/update`, item,
       { headers: {'Content-type': 'application/json'} })
   }
 }
