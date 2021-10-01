@@ -8,7 +8,7 @@ BSc (Hons) in Software Systems Development - Year 4 Semester 1
 
 **Grade:** 63%  
 
-## Client UI.
+## Client UI
 WIT Lost And Found
 
 
@@ -54,12 +54,12 @@ WIT Lost And Found
 
 >>Sign-up Page connected with firebase
 
-## E2E/Cypress testing.
+# E2E/Cypress testing:
 
-## Web API CI.
+## Web API CI
 https://jonathanmcdonagh.gitlab.io/wit-lost-and-found-cicd/coverage/lcov-report/
 
-## GitLab CI.
+## GitLab CI
 https://gitlab.com/jonathanmcdonagh/wit-lost-and-found-cicd
 
 ## Completed in December 2019
