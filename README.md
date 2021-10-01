@@ -59,3 +59,5 @@ https://gitlab.com/jonathanmcdonagh/wit-lost-and-found-cicd
 
 ## GitLab CI.
 
+## Completed in December 2019
+
