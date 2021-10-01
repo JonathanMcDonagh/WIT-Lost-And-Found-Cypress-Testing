@@ -1,8 +1,12 @@
-# Assignment 2 - Agile Software Practice.
+## Assignment 2
 
 Name: Jonathan McDonagh
 
-Student Number: 20074520
+## Agile Software Practice
+
+BSc (Hons) in Software Systems Development - Year 4 Semester 1
+
+**Grade:** 63%  
 
 ## Client UI.
 WIT Lost And Found
@@ -55,9 +59,8 @@ WIT Lost And Found
 ## Web API CI.
 https://jonathanmcdonagh.gitlab.io/wit-lost-and-found-cicd/coverage/lcov-report/
 
-https://gitlab.com/jonathanmcdonagh/wit-lost-and-found-cicd
-
 ## GitLab CI.
+https://gitlab.com/jonathanmcdonagh/wit-lost-and-found-cicd
 
 ## Completed in December 2019
 
